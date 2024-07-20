@@ -140,6 +140,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .progresses{
+        margin: 40px 0;
+    }
+    
     .progresses h2{
         font-size: 22px;
      }
