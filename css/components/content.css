@@ -1,0 +1,123 @@
+main{
+    width: 100%;
+    margin: 150px 0 0 0;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 80px 0;
+}
+
+.content > div{
+    width: 50%;
+    min-width: 200px;
+}
+
+.content div h1{
+    font-size: 45px;
+    color: #0AA007;
+}
+
+.content div p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.content > div img{
+    width: 100%;
+    min-width: 200px;
+}
+
+.main_btn{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    background: #0AA007;
+    box-shadow: 10px 10px 30px -1px rgba(0,0,0,0.27);
+    color: #ffff;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        width: 100%;
+        background-color: #ffff;
+        margin: 120px 0 0 0;
+    }
+    
+    .content div h1{
+        color: #0AA007;
+        font-size: 40px;
+    }
+    
+    .content div p{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    .content > div img{
+        width: 100%;
+    }
+    
+    .main_btn{
+        width: 180px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .main_btn a{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    main{
+        width: 100%;
+        background-color: #ffff;
+    }
+
+    .content{
+        margin-left: 45px;
+    }
+    
+    .content div h1{
+        color: #0AA007;
+        font-size: 25px;
+    }
+    
+    .content div p{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    .content > div img{
+        width: 80%;
+        margin: 10px 0;
+    }
+    
+    .main_btn{
+        width: 180px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .main_btn a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main{
+        width: 100%;
+        background-color: #ffff;
+    }
+
+    .content{
+        margin-left: 20px;
+    }
+}

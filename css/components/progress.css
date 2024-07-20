@@ -1,0 +1,155 @@
+.progresses{
+    margin: 50px 0 180px 0;
+}
+
+.progresses h2{
+   text-align: center;
+   color: #0AA007;
+   font-size: 35px;
+   margin-bottom: 30px;
+}
+
+.progresses_block{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #0AA007;
+    display: flex;
+    box-sizing: border-box;
+    background: #0AA007;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+
+.progresses_block .progresses_line{
+    width: 25%;
+    height: 100%;
+    border-radius: 50px;
+    position: relative;
+}
+
+.progresses_block .progresses_line:first-child{
+    width: 25%;
+    height: 100%;
+    border-radius: 50px;
+    background: #ffffff;
+}
+
+.progresses_block .progresses_line::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    color: #0AA007;
+    text-align: center;
+    font-size: 14px;
+}
+
+.progresses_block .progresses_line:first-child::after{
+    content: "Создать сервис по выносу мусора прямо из квартиры";
+}
+
+.progresses_block .progresses_line:nth-child(2):after{
+    content: "Запуск мобильного приложения";
+}
+
+.progresses_block .progresses_line:nth-child(3):after{
+    content: "Сортировочные центры мусора";
+}
+
+.progresses_block .progresses_line:nth-child(4):after{
+    content: "Переработка и утилизация";
+}
+
+
+.progresses_block .sphere{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 40px solid #0AA007;
+    position: absolute;
+    background: #ffffff;
+    top: -227%;
+    left: 20%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    color: #0AA007;
+}
+
+.progresses_block_change{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .progresses_block .sphere{
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        background: #ffffff;
+        border: 20px solid #0AA007;
+        position: absolute;
+        top: -170%;
+        left: 20%;
+        text-align: center;
+        line-height: 80px;
+        font-size: 30px;
+        color: #0AA007;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .progresses_block{
+        width: 100%;
+        height: 20px;
+        border-radius: 50px;
+        border: 1px solid #0AA007;
+        display: flex;
+        box-sizing: border-box;
+        background: #0AA007;
+        margin: 70px 0;
+    }
+
+    .progresses_block .sphere{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: #ffffff;
+        border: 10px solid #0AA007;
+        position: absolute;
+        top: -170%;
+        left: 20%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 30px;
+        color: #0AA007;
+    }
+
+    .progresses_block .progresses_line::after{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 70px;
+        color: #0AA007;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px) {
+    .progresses h2{
+        font-size: 22px;
+     }
+
+    .progresses_block_change{
+        display: block;
+        color: #0AA007;
+        font-size: 18px;
+    }
+    .progresses_block{
+        display: none;
+    }
+}

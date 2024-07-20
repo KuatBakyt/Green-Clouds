@@ -1,0 +1,57 @@
+.contacts{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contacts h2{
+    text-align: center;
+    color: #0AA007;
+    font-size: 35px;
+}
+.site-contacts-content {
+    width: 450px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.city-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.city-content {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-label {
+    font-weight: bold;
+}
+.times-list li {
+    margin-bottom: 5px;
+}
+
+.contact-map img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.contacts_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .contact-map img{
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,88 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.navbar-brand {
+    color: #ffff;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: .3s ease
+}
+
+.navbar-brand:hover{
+    color: #eef5ec;
+    transition: .3s ease
+}
+
+.navbar {
+    background: #4ae747;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.phone-number a {
+    display: flex;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.phone-number a:hover {
+    opacity: 0.8;
+}
+
+.phone-number a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    margin-right: 2px;
+}
+
+.nav-link.active{
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(72, 205, 63) 60%, rgba(16, 205, 1, 1) 100%);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-link.active::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .navbar-brand {
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+
+    .phone-number a {
+        display: flex;
+        color: #ffff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+}
